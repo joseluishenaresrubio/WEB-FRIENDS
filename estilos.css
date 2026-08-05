@@ -23,8 +23,7 @@ header{
 }
 
 .portada img{
-    width:100%;
-    height:70vh;
+    width:80%;
     object-fit:cover;
     display:block;
 }
