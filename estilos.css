@@ -18,13 +18,13 @@ header{
 }
 
 .logo{
-    width:90%;
+    width:80%;
     max-width:900px;
 }
 
 .portada img{
-    text-align:center;
-    width:90%;
+    width:100%;
+    height:70vh;
     object-fit:cover;
     display:block;
 }
