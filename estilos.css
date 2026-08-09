@@ -1,12 +1,13 @@
-/* ================================
-   ESTILOS GENERALES
-   ================================ */
+/* =====================================
+   CONFIGURACIÓN GENERAL
+   ===================================== */
 
 * {
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
 }
@@ -18,180 +19,175 @@ body {
 }
 
 
-/* ================================
-   CABECERA / LOGO
-   ================================ */
+/* =====================================
+   CAPA LOGO
+   ===================================== */
 
-header {
+#logo {
     width: 90%;
-    max-width: 1200px;
     margin: 0 auto;
     padding: 0;
-    background: white;
     text-align: center;
 }
 
-.logo {
+#logo img {
+    display: block;
     width: 100%;
     height: auto;
-    display: block;
 }
 
 
-/* ================================
-   BARRA DE NAVEGACIÓN
-   ================================ */
+/* =====================================
+   CAPA MENU
+   ===================================== */
 
-nav {
+#menu {
     width: 90%;
-    max-width: 1200px;
     margin: 0 auto;
     padding: 0;
+
+    display: flex;
 }
 
-nav table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 0;
-    padding: 0;
-}
+#menu a {
+    flex: 1;
 
-nav td {
-    width: 25%;
-    text-align: center;
-    padding: 20px 10px;
-    border: 1px solid #aaa;
-    background: #ddd;
-    font-size: 28px;
-}
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-nav a {
-    text-decoration: none;
+    height: 80px;
+
+    background: #dddddd;
+    border: 1px solid #aaaaaa;
+
     color: #333;
-    display: block;
+    text-decoration: none;
+
+    font-size: 26px;
 }
 
 
-/* ================================
-   PORTADA
-   ================================ */
+/* =====================================
+   CAPA PORTADA
+   ===================================== */
 
-.portada {
+#portada {
     width: 90%;
-    max-width: 1200px;
     margin: 0 auto;
     padding: 0;
 }
 
-.portada img {
+#portada img {
+    display: block;
     width: 100%;
     height: auto;
-    display: block;
 }
 
 
-/* ================================
-   CONTENIDO
-   ================================ */
+/* =====================================
+   CAPA CONTENIDO
+   ===================================== */
 
-section {
+#contenido {
     width: 90%;
-    max-width: 1200px;
     margin: 0 auto;
     padding: 0;
 }
 
-h1 {
-    font-size: 52px;
+
+/* =====================================
+   CAPA BIENVENIDA
+   ===================================== */
+
+#bienvenida {
+    width: 100%;
+    margin: 0;
+    padding: 20px 0;
     text-align: center;
-    margin: 30px 0 20px 0;
 }
 
-h2 {
-    font-size: 38px;
-    margin: 30px 0 20px 0;
+#bienvenida h1 {
+    margin: 0 0 25px 0;
+    font-size: 48px;
 }
 
-h3 {
-    font-size: 28px;
-    margin: 25px 0 10px 0;
-}
-
-p {
+#bienvenida p {
+    margin: 0;
     font-size: 24px;
     line-height: 1.6;
-    margin: 10px 0;
 }
 
 
-/* ================================
-   EVENTOS
-   ================================ */
+/* =====================================
+   CAPA EVENTOS 2024
+   ===================================== */
 
-.eventos {
-    width: 90%;
-    max-width: 1200px;
-    margin: 40px auto 0 auto;
+#eventos2024 {
+    width: 100%;
+    margin: 50px 0 0 0;
     padding: 0;
+}
+
+#eventos2024 h2 {
+    margin: 0 0 35px 0;
+    font-size: 38px;
 }
 
 .evento {
-    margin: 25px 0;
+    margin: 0 0 35px 0;
     padding: 0;
 }
 
 .evento h3 {
-    margin-bottom: 10px;
+    margin: 0 0 10px 0;
+    font-size: 28px;
+}
+
+.evento p {
+    margin: 0;
+    font-size: 22px;
 }
 
 
-/* ================================
-   MÓVILES
-   ================================ */
+/* =====================================
+   AJUSTES PARA MOVIL
+   ===================================== */
 
-@media screen and (max-width: 600px) {
+@media (max-width: 600px) {
 
-    header {
-        width: 90%;
+    #menu a {
+        height: 65px;
+        font-size: 20px;
     }
 
-    nav {
-        width: 90%;
+    #bienvenida {
+        padding: 20px 0;
     }
 
-    nav td {
-        font-size: 18px;
-        padding: 18px 5px;
+    #bienvenida h1 {
+        font-size: 36px;
+        margin-bottom: 20px;
     }
 
-    .portada {
-        width: 90%;
-    }
-
-    section {
-        width: 90%;
-    }
-
-    h1 {
-        font-size: 38px;
-        margin: 25px 0 15px 0;
-    }
-
-    h2 {
-        font-size: 30px;
-    }
-
-    h3 {
-        font-size: 24px;
-    }
-
-    p {
+    #bienvenida p {
         font-size: 20px;
         line-height: 1.5;
     }
 
-    .eventos {
-        width: 90%;
-        margin-top: 30px;
+    #eventos2024 {
+        margin-top: 40px;
+    }
+
+    #eventos2024 h2 {
+        font-size: 32px;
+    }
+
+    .evento h3 {
+        font-size: 25px;
+    }
+
+    .evento p {
+        font-size: 20px;
     }
 }
