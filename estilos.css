@@ -76,3 +76,12 @@ header{
 .evento h3{
     margin-bottom:10px;
 }
+
+@media (max-width:600px){
+
+    .portada{
+        height:auto;
+        object-fit:contain;
+    }
+
+}
