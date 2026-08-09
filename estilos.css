@@ -190,4 +190,20 @@ body {
     .evento p {
         font-size: 20px;
     }
+
+    #menu {
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+    }
+
+    #menu a {
+        flex: 1 1 25%;
+        width: 25%;
+        height: 55px;
+        padding: 5px 2px;
+        font-size: 16px;
+        white-space: nowrap;
+    }
+
 }
