@@ -1,28 +1,38 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
+/* ==============================
+   WEB FRIENDS - ESTILOS
+   ============================== */
 
 body{
+    margin:0;
+    padding:0;
+    background:#f2f2f2;
     font-family:Arial, Helvetica, sans-serif;
-    background:#f4f4f4;
     color:#333;
 }
 
+
+/* ==============================
+   CABECERA
+   ============================== */
+
 header{
-    background:white;
+    width:100%;
     text-align:center;
-    padding:20px;
-    box-shadow:0 2px 8px rgba(0,0,0,.15);
+    padding:20px 0;
 }
 
 .logo{
     width:90%;
     max-width:1200px;
+    height:auto;
     display:block;
     margin:0 auto;
 }
+
+
+/* ==============================
+   PORTADA
+   ============================== */
 
 .portada{
     width:90%;
@@ -32,55 +42,63 @@ header{
     margin:0 auto;
 }
 
-.presentacion{
-    text-align:center;
-    padding:50px 20px;
-}
 
-.presentacion h1{
-    font-size:40px;
-    margin-bottom:20px;
-}
-
-.presentacion p{
-    font-size:20px;
-}
+/* ==============================
+   CONTENIDO
+   ============================== */
 
 .eventos{
     width:90%;
     max-width:1200px;
-    margin:auto;
+    margin:0 auto;
     padding:40px 0;
 }
 
-.eventos h2{
+
+/* ==============================
+   TITULOS
+   ============================== */
+
+h1{
     text-align:center;
-    margin-bottom:40px;
-    font-size:36px;
 }
 
-.evento{
-    background:white;
-    border-radius:15px;
-    padding:25px;
-    margin-bottom:20px;
-    box-shadow:0 5px 15px rgba(0,0,0,.15);
-    transition:.3s;
+h2{
+    text-align:left;
 }
 
-.evento:hover{
-    transform:translateY(-5px);
+
+/* ==============================
+   PARRAFOS
+   ============================== */
+
+p{
+    line-height:1.5;
 }
 
-.evento h3{
-    margin-bottom:10px;
-}
+
+/* ==============================
+   MOVILES
+   ============================== */
 
 @media (max-width:600px){
 
+    header{
+        padding:10px 0;
+    }
+
+    .logo{
+        width:90%;
+    }
+
     .portada{
+        width:90%;
         height:auto;
-        object-fit:contain;
+    }
+
+    .eventos{
+        width:90%;
+        padding:25px 0;
     }
 
 }
