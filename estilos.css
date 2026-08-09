@@ -102,3 +102,31 @@ p{
     }
 
 }
+
+/* ==============================
+   MENU DE AÑOS
+   ============================== */
+
+.menu-anos{
+    width:90%;
+    max-width:1200px;
+    margin:20px auto;
+    display:flex;
+    justify-content:center;
+    gap:0;
+}
+
+.menu-anos a{
+    flex:1;
+    text-align:center;
+    text-decoration:none;
+    color:#333;
+    background:#ddd;
+    padding:15px 10px;
+    border:1px solid #aaa;
+    font-weight:bold;
+}
+
+.menu-anos a:hover{
+    background:#bbb;
+}
