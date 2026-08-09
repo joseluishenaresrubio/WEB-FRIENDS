@@ -18,8 +18,16 @@ header{
 }
 
 .logo{
-    width:80%;
-    max-width:900px;
+    width:90%;
+    max-width:1200px;
+    display:block;
+    margin:auto;
+}
+
+.portada{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
 }
 
 .portada img{
@@ -45,7 +53,7 @@ header{
 
 .eventos{
     width:90%;
-    max-width:1100px;
+    max-width:1200px;
     margin:auto;
     padding:40px 0;
 }
