@@ -20,14 +20,13 @@ body {
 
 
 /* =====================================
-   CAPA LOGO
+   LOGO
    ===================================== */
 
 #logo {
     width: 90%;
     margin: 0 auto;
     padding: 0;
-    text-align: center;
 }
 
 #logo img {
@@ -38,25 +37,25 @@ body {
 
 
 /* =====================================
-   CAPA MENU
+   MENU DE AÑOS
    ===================================== */
 
 #menu {
     width: 90%;
     margin: 0 auto;
     padding: 0;
-
     display: flex;
+    flex-direction: row;
 }
 
 #menu a {
-    flex: 1;
+    flex: 1 1 25%;
+    width: 25%;
+    height: 80px;
 
     display: flex;
     align-items: center;
     justify-content: center;
-
-    height: 80px;
 
     background: #dddddd;
     border: 1px solid #aaaaaa;
@@ -65,11 +64,18 @@ body {
     text-decoration: none;
 
     font-size: 26px;
+    font-weight: bold;
+
+    white-space: nowrap;
+}
+
+#menu a:hover {
+    background: #bbbbbb;
 }
 
 
 /* =====================================
-   CAPA PORTADA
+   PORTADA
    ===================================== */
 
 #portada {
@@ -86,7 +92,7 @@ body {
 
 
 /* =====================================
-   CAPA CONTENIDO
+   CONTENIDO
    ===================================== */
 
 #contenido {
@@ -97,7 +103,7 @@ body {
 
 
 /* =====================================
-   CAPA BIENVENIDA
+   BIENVENIDA
    ===================================== */
 
 #bienvenida {
@@ -120,7 +126,7 @@ body {
 
 
 /* =====================================
-   CAPA EVENTOS 2024
+   EVENTOS 2024
    ===================================== */
 
 #eventos2024 {
@@ -151,15 +157,59 @@ body {
 
 
 /* =====================================
-   AJUSTES PARA MOVIL
+   MOVILES
    ===================================== */
 
 @media (max-width: 600px) {
 
-    #menu a {
-        height: 65px;
-        font-size: 20px;
+    /* LOGO */
+
+    #logo {
+        width: 90%;
     }
+
+
+    /* MENU */
+
+    #menu {
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    #menu a {
+        flex: 1 1 25%;
+        width: 25%;
+        height: 55px;
+
+        padding: 5px 2px;
+
+        font-size: 16px;
+
+        white-space: nowrap;
+    }
+
+
+    /* PORTADA */
+
+    #portada {
+        width: 90%;
+    }
+
+    #portada img {
+        width: 100%;
+        height: auto;
+    }
+
+
+    /* CONTENIDO */
+
+    #contenido {
+        width: 90%;
+    }
+
+
+    /* BIENVENIDA */
 
     #bienvenida {
         padding: 20px 0;
@@ -167,13 +217,16 @@ body {
 
     #bienvenida h1 {
         font-size: 36px;
-        margin-bottom: 20px;
+        margin: 0 0 20px 0;
     }
 
     #bienvenida p {
         font-size: 20px;
         line-height: 1.5;
     }
+
+
+    /* EVENTOS */
 
     #eventos2024 {
         margin-top: 40px;
@@ -190,20 +243,4 @@ body {
     .evento p {
         font-size: 20px;
     }
-
-    #menu {
-        display: flex;
-        flex-direction: row;
-        width: 90%;
-    }
-
-    #menu a {
-        flex: 1 1 25%;
-        width: 25%;
-        height: 55px;
-        padding: 5px 2px;
-        font-size: 16px;
-        white-space: nowrap;
-    }
-
 }
