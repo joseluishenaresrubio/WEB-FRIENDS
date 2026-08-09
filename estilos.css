@@ -27,6 +27,7 @@ header{
 .portada{
     width:446px;
     height:247px;
+		max-width:1200px;
     object-fit:cover;
     display:block;
     margin:0 auto;
