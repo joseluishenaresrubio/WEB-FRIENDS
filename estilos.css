@@ -1,7 +1,3 @@
-/* =====================================
-   CONFIGURACIÓN GENERAL
-   ===================================== */
-
 * {
     box-sizing: border-box;
 }
@@ -19,9 +15,7 @@ body {
 }
 
 
-/* =====================================
-   LOGO
-   ===================================== */
+/* LOGO */
 
 #logo {
     width: 90%;
@@ -36,9 +30,7 @@ body {
 }
 
 
-/* =====================================
-   MENU DE AÑOS
-   ===================================== */
+/* MENU */
 
 #menu {
     width: 90%;
@@ -52,20 +44,15 @@ body {
     flex: 1 1 25%;
     width: 25%;
     height: 80px;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     background: #dddddd;
     border: 1px solid #aaaaaa;
-
     color: #333;
     text-decoration: none;
-
     font-size: 26px;
     font-weight: bold;
-
     white-space: nowrap;
 }
 
@@ -74,9 +61,7 @@ body {
 }
 
 
-/* =====================================
-   PORTADA
-   ===================================== */
+/* PORTADA */
 
 #portada {
     width: 90%;
@@ -91,9 +76,7 @@ body {
 }
 
 
-/* =====================================
-   CONTENIDO
-   ===================================== */
+/* CONTENIDO */
 
 #contenido {
     width: 90%;
@@ -102,74 +85,84 @@ body {
 }
 
 
-/* =====================================
-   BIENVENIDA
-   ===================================== */
+/* GALERIA */
 
-#bienvenida {
+#galeria {
     width: 100%;
-    margin: 0;
-    padding: 20px 0;
+    text-align: center;
+    margin: 30px 0;
+    padding: 0;
+}
+
+#galeria .foto {
+    display: inline-block !important;
+    width: 30% !important;
+    margin: 1%;
+    vertical-align: top;
+}
+
+#galeria .foto img {
+    width: 100% !important;
+    height: auto;
+    display: block;
+    cursor: pointer;
+}
+
+
+/* VIDEO */
+
+#video {
+    width: 100%;
+    margin: 30px 0;
+    padding: 0;
     text-align: center;
 }
 
-#bienvenida h1 {
-    margin: 0 0 25px 0;
-    font-size: 48px;
-}
-
-#bienvenida p {
-    margin: 0;
-    font-size: 24px;
-    line-height: 1.6;
+#video video {
+    width: auto;
+    max-width: 90%;
+    height: auto;
 }
 
 
-/* =====================================
-   EVENTOS 2024
-   ===================================== */
+/* VISOR DE FOTOS */
 
-#eventos2024 {
+#visor {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
     width: 100%;
-    margin: 50px 0 0 0;
-    padding: 0;
+    height: 100%;
+    background: rgba(0,0,0,0.85);
+    text-align: center;
+    z-index: 1000;
 }
 
-#eventos2024 h2 {
-    margin: 0 0 35px 0;
-    font-size: 38px;
+#fotoGrande {
+    max-width: 90%;
+    max-height: 90%;
+    margin-top: 5%;
 }
 
-.evento {
-    margin: 0 0 35px 0;
-    padding: 0;
-}
-
-.evento h3 {
-    margin: 0 0 10px 0;
-    font-size: 28px;
-}
-
-.evento p {
-    margin: 0;
-    font-size: 22px;
+#cerrar {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 
-/* =====================================
-   MOVILES
-   ===================================== */
+/* MOVIL */
 
 @media (max-width: 600px) {
-
-    /* LOGO */
 
     #logo {
         width: 90%;
     }
-
-
-    /* MENU */
 
     #menu {
         width: 90%;
@@ -181,16 +174,10 @@ body {
         flex: 1 1 25%;
         width: 25%;
         height: 55px;
-
         padding: 5px 2px;
-
         font-size: 16px;
-
         white-space: nowrap;
     }
-
-
-    /* PORTADA */
 
     #portada {
         width: 90%;
@@ -201,63 +188,108 @@ body {
         height: auto;
     }
 
-
-    /* CONTENIDO */
-
     #contenido {
         width: 90%;
     }
 
-
-    /* BIENVENIDA */
-
-    #bienvenida {
-        padding: 20px 0;
+    #galeria .foto {
+        width: 46% !important;
+        margin: 1.5%;
     }
 
-    #bienvenida h1 {
-        font-size: 36px;
-        margin: 0 0 20px 0;
+    #video video {
+        max-width: 90%;
     }
 
-    #bienvenida p {
-        font-size: 20px;
-        line-height: 1.5;
+    #fotoGrande {
+        max-width: 95%;
+        max-height: 85%;
+        margin-top: 10%;
     }
 
-
-    /* EVENTOS */
-
-    #eventos2024 {
-        margin-top: 40px;
+    #cerrar {
+        top: 10px;
+        right: 15px;
+        font-size: 35px;
     }
+		/* INDICE DE EVENTOS */
 
-    #eventos2024 h2 {
-        font-size: 32px;
-    }
-
-    .evento h3 {
-        font-size: 25px;
-    }
-
-    .evento p {
-        font-size: 20px;
-    }
-		
-	#galeria {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
+.evento {
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 1%;
+    text-align: center;
 }
 
-.foto {
-    width: 100%;
-}
-
-.foto img {
+.evento img {
     width: 100%;
     height: auto;
     display: block;
+    cursor: pointer;
+}
+
+.evento p {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+
+/* BOTON VOLVER */
+
+#volver {
+    text-align: center;
+    margin: 40px 0;
+}
+
+#volver a {
+    display: inline-block;
+    padding: 12px 30px;
+    background: #dddddd;
+    border: 1px solid #aaaaaa;
+    color: #333333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#volver a:hover {
+    background: #bbbbbb;
+}
+
+
+/* PIE DE PAGINA */
+
+#pie {
+    width: 90%;
+    margin: 40px auto 0 auto;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #aaaaaa;
+}
+
+#pie p {
+    margin: 5px 0 15px 0;
+}
+
+#pie img {
+    width: 80px;
+    height: auto;
+    cursor: pointer;
+}
+
+
+/* EVENTOS EN MOVIL */
+
+@media (max-width: 600px) {
+
+    .evento {
+        width: 46%;
+        margin: 1.5%;
+    }
+
+    .evento p {
+        font-size: 16px;
+    }
+
 }
 }
