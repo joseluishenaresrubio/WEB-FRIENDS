@@ -15,7 +15,9 @@ body {
 }
 
 
-/* LOGO */
+/* =========================
+   LOGO
+   ========================= */
 
 #logo {
     width: 90%;
@@ -30,7 +32,9 @@ body {
 }
 
 
-/* MENU */
+/* =========================
+   MENU
+   ========================= */
 
 #menu {
     width: 90%;
@@ -61,7 +65,9 @@ body {
 }
 
 
-/* PORTADA */
+/* =========================
+   PORTADA
+   ========================= */
 
 #portada {
     width: 90%;
@@ -76,7 +82,9 @@ body {
 }
 
 
-/* CONTENIDO */
+/* =========================
+   CONTENIDO
+   ========================= */
 
 #contenido {
     width: 90%;
@@ -85,7 +93,9 @@ body {
 }
 
 
-/* GALERIA */
+/* =========================
+   GALERIA DE FOTOS
+   ========================= */
 
 #galeria {
     width: 100%;
@@ -97,7 +107,7 @@ body {
 #galeria .foto {
     display: inline-block !important;
     width: 30% !important;
-    margin: 1%;
+    margin: 1% !important;
     vertical-align: top;
 }
 
@@ -109,7 +119,34 @@ body {
 }
 
 
-/* VIDEO */
+/* =========================
+   INDICE DE EVENTOS
+   ========================= */
+
+.evento {
+    display: inline-block !important;
+    vertical-align: top;
+    width: 30% !important;
+    margin: 1% !important;
+    text-align: center;
+}
+
+.evento img {
+    display: block;
+    width: 100% !important;
+    height: auto;
+    cursor: pointer;
+}
+
+.evento p {
+    margin: 10px 0 20px 0;
+    font-size: 18px;
+}
+
+
+/* =========================
+   VIDEO
+   ========================= */
 
 #video {
     width: 100%;
@@ -125,117 +162,9 @@ body {
 }
 
 
-/* VISOR DE FOTOS */
-
-#visor {
-    display: none;
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.85);
-    text-align: center;
-    z-index: 1000;
-}
-
-#fotoGrande {
-    max-width: 90%;
-    max-height: 90%;
-    margin-top: 5%;
-}
-
-#cerrar {
-    position: absolute;
-    top: 15px;
-    right: 25px;
-    color: white;
-    font-size: 40px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-
-/* MOVIL */
-
-@media (max-width: 600px) {
-
-    #logo {
-        width: 90%;
-    }
-
-    #menu {
-        width: 90%;
-        display: flex;
-        flex-direction: row;
-    }
-
-    #menu a {
-        flex: 1 1 25%;
-        width: 25%;
-        height: 55px;
-        padding: 5px 2px;
-        font-size: 16px;
-        white-space: nowrap;
-    }
-
-    #portada {
-        width: 90%;
-    }
-
-    #portada img {
-        width: 100%;
-        height: auto;
-    }
-
-    #contenido {
-        width: 90%;
-    }
-
-    #galeria .foto {
-        width: 46% !important;
-        margin: 1.5%;
-    }
-
-    #video video {
-        max-width: 90%;
-    }
-
-    #fotoGrande {
-        max-width: 95%;
-        max-height: 85%;
-        margin-top: 10%;
-    }
-
-    #cerrar {
-        top: 10px;
-        right: 15px;
-        font-size: 35px;
-    }
-		/* INDICE DE EVENTOS */
-
-.evento {
-    width: 30%;
-    display: inline-block;
-    vertical-align: top;
-    margin: 1%;
-    text-align: center;
-}
-
-.evento img {
-    width: 100%;
-    height: auto;
-    display: block;
-    cursor: pointer;
-}
-
-.evento p {
-    margin-top: 10px;
-    font-size: 18px;
-}
-
-
-/* BOTON VOLVER */
+/* =========================
+   BOTON VOLVER
+   ========================= */
 
 #volver {
     text-align: center;
@@ -257,7 +186,42 @@ body {
 }
 
 
-/* PIE DE PAGINA */
+/* =========================
+   VISOR DE FOTOS
+   ========================= */
+
+#visor {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    text-align: center;
+    z-index: 1000;
+}
+
+#fotoGrande {
+    max-width: 90%;
+    max-height: 90%;
+    margin-top: 5%;
+}
+
+#cerrar {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* =========================
+   PIE DE PAGINA
+   ========================= */
 
 #pie {
     width: 90%;
@@ -278,42 +242,102 @@ body {
 }
 
 
-/* EVENTOS EN MOVIL */
+/* =========================
+   MOVIL
+   ========================= */
 
 @media (max-width: 600px) {
 
+    #logo {
+        width: 90%;
+    }
+
+
+    /* MENU */
+
+    #menu {
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    #menu a {
+        flex: 1 1 25%;
+        width: 25%;
+        height: 55px;
+        padding: 5px 2px;
+        font-size: 16px;
+        white-space: nowrap;
+    }
+
+
+    /* PORTADA */
+
+    #portada {
+        width: 90%;
+    }
+
+    #portada img {
+        width: 100%;
+        height: auto;
+    }
+
+
+    /* CONTENIDO */
+
+    #contenido {
+        width: 90%;
+    }
+
+
+    /* GALERIA */
+
+    #galeria .foto {
+        display: inline-block !important;
+        width: 46% !important;
+        margin: 1.5% !important;
+    }
+
+
+    /* INDICE 2024 */
+
     .evento {
-        width: 46%;
-        margin: 1.5%;
+        display: inline-block !important;
+        width: 46% !important;
+        margin: 1.5% !important;
     }
 
     .evento p {
         font-size: 16px;
     }
 
-}
-/* DISTRIBUCION DE LOS EVENTOS EN EL INDICE 2024 */
 
-#contenido .evento {
-    display: inline-block !important;
-    width: 30% !important;
-    margin: 1% !important;
-    vertical-align: top;
-    text-align: center;
-}
+    /* VIDEO */
 
-#contenido .evento img {
-    width: 100% !important;
-    height: auto;
-    display: block;
-}
-@media (max-width: 600px) {
-
-    #contenido .evento {
-        display: inline-block !important;
-        width: 46% !important;
-        margin: 1.5% !important;
+    #video video {
+        max-width: 90%;
     }
 
-}
+
+    /* VISOR */
+
+    #fotoGrande {
+        max-width: 95%;
+        max-height: 85%;
+        margin-top: 10%;
+    }
+
+    #cerrar {
+        top: 10px;
+        right: 15px;
+        font-size: 35px;
+    }
+
+
+    /* PIE */
+
+    #pie {
+        width: 90%;
+    }
+
 }
