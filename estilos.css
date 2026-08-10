@@ -123,26 +123,30 @@ body {
    INDICE DE EVENTOS
    ========================= */
 
-.evento {
-    display: inline-block !important;
+#contenido {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+#contenido .evento {
+    width: 30%;
+    margin: 1%;
+    display: inline-block;
     vertical-align: top;
-    width: 30% !important;
-    margin: 1% !important;
     text-align: center;
 }
 
-.evento img {
-    display: block;
-    width: 100% !important;
+#contenido .evento img {
+    width: 100%;
     height: auto;
-    cursor: pointer;
+    display: block;
 }
 
-.evento p {
+#contenido .evento p {
     margin: 10px 0 20px 0;
     font-size: 18px;
 }
-
 
 /* =========================
    VIDEO
