@@ -236,12 +236,20 @@ body {
 }
 
 #pie p {
-    margin: 5px 0 15px 0;
+    display: inline-block;
+    margin: 0 15px 0 0;
+    vertical-align: middle;
+}
+
+#pie a {
+    display: inline-block;
+    vertical-align: middle;
 }
 
 #pie img {
     width: 80px;
     height: auto;
+    display: block;
     cursor: pointer;
 }
 
