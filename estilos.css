@@ -292,4 +292,28 @@ body {
     }
 
 }
+/* DISTRIBUCION DE LOS EVENTOS EN EL INDICE 2024 */
+
+#contenido .evento {
+    display: inline-block !important;
+    width: 30% !important;
+    margin: 1% !important;
+    vertical-align: top;
+    text-align: center;
+}
+
+#contenido .evento img {
+    width: 100% !important;
+    height: auto;
+    display: block;
+}
+@media (max-width: 600px) {
+
+    #contenido .evento {
+        display: inline-block !important;
+        width: 46% !important;
+        margin: 1.5% !important;
+    }
+
+}
 }
