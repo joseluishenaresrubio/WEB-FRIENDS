@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cumple Montse - 2025</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+<div id="logo">
+    <img src="objetos/logo.jpeg" alt="WEB FRIENDS">
+</div>
+
+<div id="menu">
+    <a href="index.html">INICIO</a>
+    <a href="index2024.html">2024</a>
+    <a href="index2025.html">2025</a>
+    <a href="#">2026</a>
+</div>
+
+<div id="contenido">
+
+    <h1>Cumple Montse</h1>
+
+    <h2>2025</h2>
+
+    <div id="galeria">
+
+        <div class="foto"> <img src="fotos2025/cumplem1.jpeg" alt="Cumple Montse 1" onclick="abrirFoto(1)"> </div>
+        <div class="foto"> <img src="fotos2025/cumplem2.jpeg" alt="Cumple Montse 2" onclick="abrirFoto(2)"> </div>
+        <div class="foto"> <img src="fotos2025/cumplem3.jpeg" alt="Cumple Montse 3" onclick="abrirFoto(3)"> </div>
+        <div class="foto"> <img src="fotos2025/cumplem4.jpeg" alt="Cumple Montse 4" onclick="abrirFoto(4)"> </div>
+        <div class="foto"> <img src="fotos2025/cumplem5.jpeg" alt="Cumple Montse 5" onclick="abrirFoto(5)"> </div>
+        <div class="foto"> <img src="fotos2025/cumplem6.jpeg" alt="Cumple Montse 6" onclick="abrirFoto(6)"> </div>
+        <div class="foto"> <img src="fotos2025/cumplem7.jpeg" alt="Cumple Montse 7" onclick="abrirFoto(7)"> </div>
+        <div class="foto"> <img src="fotos2025/cumplem8.jpeg" alt="Cumple Montse 8" onclick="abrirFoto(8)"> </div>
+        <div class="foto"> <img src="fotos2025/cumplem9.jpeg" alt="Cumple Montse 9" onclick="abrirFoto(9)"> </div>
+        <div class="foto"> <img src="fotos2025/cumplem10.jpeg" alt="Cumple Montse 10" onclick="abrirFoto(10)"> </div>
+        <div class="foto"> <img src="fotos2025/cumplem11.jpeg" alt="Cumple Montse 11" onclick="abrirFoto(11)"> </div>
+        <div class="foto"> <img src="fotos2025/cumplem12.jpeg" alt="Cumple Montse 12" onclick="abrirFoto(12)"> </div>
+        <div class="foto"> <img src="fotos2025/cumplem13.jpeg" alt="Cumple Montse 13" onclick="abrirFoto(13)"> </div>
+        <div class="foto"> <img src="fotos2025/cumplem14.jpeg" alt="Cumple Montse 14" onclick="abrirFoto(14)"> </div>
+
+    </div>
+
+    <div id="volver">
+        <a href="index2025.html">VOLVER</a>
+    </div>
+
+</div>
+
+<div id="visor">
+
+    <span id="cerrar" onclick="cerrarFoto()">X</span>
+
+    <img id="fotoGrande" src="" alt="Foto ampliada">
+
+</div>
+
+<div id="pie">
+
+    <p>Contacto: joseluishenaresrubio@gmail.com</p>
+
+    <a href="mailto:joseluishenaresrubio@gmail.com">
+        <img src="objetos/buzon.gif" alt="Enviar correo">
+    </a>
+
+</div>
+
+<script>
+
+function abrirFoto(numero) {
+
+    document.getElementById("fotoGrande").src =
+        "fotos2025/cumplem" + numero + ".jpeg";
+
+    document.getElementById("visor").style.display = "block";
+
+}
+
+function cerrarFoto() {
+
+    document.getElementById("visor").style.display = "none";
+
+}
+
+</script>
+
+</body>
+</html>

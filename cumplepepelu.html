@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cumple Pepelu - 2025</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+<div id="logo">
+    <img src="objetos/logo.jpeg" alt="WEB FRIENDS">
+</div>
+
+<div id="menu">
+    <a href="index.html">INICIO</a>
+    <a href="index2024.html">2024</a>
+    <a href="index2025.html">2025</a>
+    <a href="#">2026</a>
+</div>
+
+<div id="contenido">
+
+    <h1>Cumple Pepelu</h1>
+
+    <h2>2025</h2>
+
+    <div id="galeria">
+
+        <div class="foto"> <img src="fotos2025/cumplep1.jpeg" alt="Cumple Pepelu 1" onclick="abrirFoto(1)"> </div>
+        <div class="foto"> <img src="fotos2025/cumplep2.jpeg" alt="Cumple Pepelu 2" onclick="abrirFoto(2)"> </div>
+        <div class="foto"> <img src="fotos2025/cumplep3.jpeg" alt="Cumple Pepelu 3" onclick="abrirFoto(3)"> </div>
+        <div class="foto"> <img src="fotos2025/cumplep4.jpeg" alt="Cumple Pepelu 4" onclick="abrirFoto(4)"> </div>
+        <div class="foto"> <img src="fotos2025/cumplep5.jpeg" alt="Cumple Pepelu 5" onclick="abrirFoto(5)"> </div>
+        <div class="foto"> <img src="fotos2025/cumplep6.jpeg" alt="Cumple Pepelu 6" onclick="abrirFoto(6)"> </div>
+        <div class="foto"> <img src="fotos2025/cumplep7.jpeg" alt="Cumple Pepelu 7" onclick="abrirFoto(7)"> </div>
+        <div class="foto"> <img src="fotos2025/cumplep8.jpeg" alt="Cumple Pepelu 8" onclick="abrirFoto(8)"> </div>
+        <div class="foto"> <img src="fotos2025/cumplep9.jpeg" alt="Cumple Pepelu 9" onclick="abrirFoto(9)"> </div>
+
+    </div>
+
+    <h2>Vídeo</h2>
+
+    <div id="video">
+        <video controls>
+            <source src="fotos2025/video-cumplep.mp4" type="video/mp4">
+            Tu navegador no puede reproducir este vídeo.
+        </video>
+    </div>
+
+    <div id="volver">
+        <a href="index2025.html">VOLVER</a>
+    </div>
+
+</div>
+
+<div id="visor">
+
+    <span id="cerrar" onclick="cerrarFoto()">X</span>
+
+    <img id="fotoGrande" src="" alt="Foto ampliada">
+
+</div>
+
+<div id="pie">
+
+    <p>Contacto: joseluishenaresrubio@gmail.com</p>
+
+    <a href="mailto:joseluishenaresrubio@gmail.com">
+        <img src="objetos/buzon.gif" alt="Enviar correo">
+    </a>
+
+</div>
+
+<script>
+
+function abrirFoto(numero) {
+
+    document.getElementById("fotoGrande").src =
+        "fotos2025/cumplep" + numero + ".jpeg";
+
+    document.getElementById("visor").style.display = "block";
+
+}
+
+function cerrarFoto() {
+
+    document.getElementById("visor").style.display = "none";
+
+}
+
+</script>
+
+</body>
+</html>
