@@ -1,12 +1,91 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!DOCTYPE html>
+<html lang="es">
 
-<html>
 <head>
-<title>Page title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rafting - agosto 2024</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
+
 <body>
 
+<div id="logo">
+    <img src="objetos/logo.jpeg" alt="WEB FRIENDS">
+</div>
 
+<div id="menu">
+    <a href="index.html">INICIO</a>
+    <a href="index2024.html">2024</a>
+    <a href="#">2025</a>
+    <a href="#">2026</a>
+</div>
+
+<div id="contenido">
+
+    <h1>Rafting</h1>
+
+    <h2>Agosto de 2024</h2>
+
+    <div id="galeria">
+
+        <div class="foto"> <img src="fotos/raf1.jpeg" alt="Rafting 1" onclick="abrirFoto(1)"> </div>
+        <div class="foto"> <img src="fotos/raf2.jpeg" alt="Rafting 2" onclick="abrirFoto(2)"> </div>
+        <div class="foto"> <img src="fotos/raf3.jpeg" alt="Rafting 3" onclick="abrirFoto(3)"> </div>
+        <div class="foto"> <img src="fotos/raf4.jpeg" alt="Rafting 4" onclick="abrirFoto(4)"> </div>
+        <div class="foto"> <img src="fotos/raf5.jpeg" alt="Rafting 5" onclick="abrirFoto(5)"> </div>
+        <div class="foto"> <img src="fotos/raf6.jpeg" alt="Rafting 6" onclick="abrirFoto(6)"> </div>
+        <div class="foto"> <img src="fotos/raf7.jpeg" alt="Rafting 7" onclick="abrirFoto(7)"> </div>
+        <div class="foto"> <img src="fotos/raf8.jpeg" alt="Rafting 8" onclick="abrirFoto(8)"> </div>
+        <div class="foto"> <img src="fotos/raf9.jpeg" alt="Rafting 9" onclick="abrirFoto(9)"> </div>
+        <div class="foto"> <img src="fotos/raf10.jpeg" alt="Rafting 10" onclick="abrirFoto(10)"> </div>
+        <div class="foto"> <img src="fotos/raf11.jpeg" alt="Rafting 11" onclick="abrirFoto(11)"> </div>
+        <div class="foto"> <img src="fotos/raf12.jpeg" alt="Rafting 12" onclick="abrirFoto(12)"> </div>
+
+    </div>
+
+    <div id="volver">
+        <a href="index2024.html">VOLVER</a>
+    </div>
+
+</div>
+
+<div id="visor">
+
+    <span id="cerrar" onclick="cerrarFoto()">X</span>
+
+    <img id="fotoGrande" src="" alt="Foto ampliada">
+
+</div>
+
+<div id="pie">
+
+    <p>Contacto: joseluishenaresrubio@gmail.com</p>
+
+    <a href="mailto:joseluishenaresrubio@gmail.com">
+        <img src="objetos/buzon.gif" alt="Enviar correo">
+    </a>
+
+</div>
+
+<script>
+
+function abrirFoto(numero) {
+
+    document.getElementById("fotoGrande").src =
+        "fotos/raf" + numero + ".jpeg";
+
+    document.getElementById("visor").style.display = "block";
+
+}
+
+function cerrarFoto() {
+
+    document.getElementById("visor").style.display = "none";
+
+}
+
+</script>
 
 </body>
 </html>
